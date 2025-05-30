@@ -15,25 +15,7 @@ export default function Hero() {
         interviews.
       </p>
 
-      <form className="w-full max-w-xl text-left space-y-4">
-        <input
-          type="text"
-          placeholder="Company Name"
-          className="w-full p-3 rounded border border-[var(--color-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
-        />
-
-        <input
-          type="text"
-          placeholder="Review Title"
-          className="w-full p-3 rounded border border-[var(--color-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
-        />
-
-        <textarea
-          placeholder="Write your experience..."
-          rows={5}
-          className="w-full p-3 rounded border border-[var(--color-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
-        />
-
+      <form className="w-full max-w-2xl text-left space-y-4">
         <select className="w-full p-3 rounded border border-[var(--color-primary)] text-[var(--color-text)] bg-white focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]">
           <option value="">Select Category</option>
           <option value="frontend">Frontend Development</option>
@@ -43,7 +25,25 @@ export default function Hero() {
           <option value="ux">UX</option>
           <option value="ai">AI</option>
           <option value="devops">DevOps</option>
+          <option value="project-manager">Project Management</option>
         </select>
+        <input
+          type="text"
+          placeholder="Company Name"
+          className="w-full p-3 rounded border border-[var(--color-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] text-[var(--color-text)] bg-white"
+        />
+
+        <input
+          type="text"
+          placeholder="Review Title"
+          className="w-full p-3 rounded border border-[var(--color-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] text-[var(--color-text)] bg-white"
+        />
+
+        <textarea
+          placeholder="Write your experience..."
+          rows={5}
+          className="w-full p-3 rounded border border-[var(--color-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] text-[var(--color-text)] bg-white"
+        />
 
         <div className="text-center pt-4 justify-end flex">
           <Button className="px-10 py-3 text-lg " variant="primary">
